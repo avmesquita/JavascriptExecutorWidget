@@ -78,7 +78,7 @@
 						$htmlOut = $code1;
 						break;
 				}
-				echo base64_encode(html_entity_decode($htmlOut));
+				echo html_entity_decode($htmlOut);
 			 ?>
 		</div>
 		
