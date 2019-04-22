@@ -89,7 +89,7 @@
 		// Widget Backend 
 		public function form( $instance ) {
 			if ( isset( $instance[ 'title' ] ) ) { $title = $instance[ 'title' ]; }	else { $title = __( 'New title', 'wpb_widget_impeto_funil_domain' ); }  
-			if ( isset( $instance[ 'code6' ] ) ) { $code6 = $instance[ 'code6' ]; } else { $code6 = ""; }
+			if ( isset( $instance[ 'code1' ] ) ) { $code1 = $instance[ 'code1' ]; } else { $code1 = ""; }
 			if ( isset( $instance[ 'code2' ] ) ) { $code2 = $instance[ 'code2' ]; } else { $code2 = ""; }
 			if ( isset( $instance[ 'code3' ] ) ) { $code3 = $instance[ 'code3' ]; } else { $code3 = ""; }
 			if ( isset( $instance[ 'code4' ] ) ) { $code4 = $instance[ 'code4' ]; } else { $code4 = ""; }
@@ -266,16 +266,16 @@
 	
 			$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 	
-			$instance['code6'] = ( ! empty( $new_instance['code6'] ) ) ? htmlentities ( $new_instance['code6']) : '';
-			$instance['code2'] = ( ! empty( $new_instance['code2'] ) ) ? htmlentities ( $new_instance['code2']) : '';
-			$instance['code3'] = ( ! empty( $new_instance['code3'] ) ) ? htmlentities ( $new_instance['code3']) : '';
-			$instance['code4'] = ( ! empty( $new_instance['code4'] ) ) ? htmlentities ( $new_instance['code4']) : '';
-			$instance['code5'] = ( ! empty( $new_instance['code5'] ) ) ? htmlentities ( $new_instance['code5']) : '';
-			$instance['code6'] = ( ! empty( $new_instance['code6'] ) ) ? htmlentities ( $new_instance['code6']) : '';
-			$instance['code7'] = ( ! empty( $new_instance['code7'] ) ) ? htmlentities ( $new_instance['code7']) : '';
-			$instance['code8'] = ( ! empty( $new_instance['code8'] ) ) ? htmlentities ( $new_instance['code8']) : '';
-			$instance['code9'] = ( ! empty( $new_instance['code9'] ) ) ? htmlentities ( $new_instance['code9']) : '';
-			$instance['code10'] = ( ! empty( $new_instance['code10'] ) ) ? htmlentities ( $new_instance['code10']) : '';
+			$instance['code1'] = ( ! empty( $new_instance['code1'] ) ) ? htmlspecialchars ( $new_instance['code1'], ENT_QUOTES) : '';
+			$instance['code2'] = ( ! empty( $new_instance['code2'] ) ) ? htmlspecialchars ( $new_instance['code2'], ENT_QUOTES) : '';
+			$instance['code3'] = ( ! empty( $new_instance['code3'] ) ) ? htmlspecialchars ( $new_instance['code3'], ENT_QUOTES) : '';
+			$instance['code4'] = ( ! empty( $new_instance['code4'] ) ) ? htmlspecialchars ( $new_instance['code4'], ENT_QUOTES) : '';
+			$instance['code5'] = ( ! empty( $new_instance['code5'] ) ) ? htmlspecialchars ( $new_instance['code5'], ENT_QUOTES) : '';
+			$instance['code6'] = ( ! empty( $new_instance['code6'] ) ) ? htmlspecialchars ( $new_instance['code6'], ENT_QUOTES) : '';
+			$instance['code7'] = ( ! empty( $new_instance['code7'] ) ) ? htmlspecialchars ( $new_instance['code7'], ENT_QUOTES) : '';
+			$instance['code8'] = ( ! empty( $new_instance['code8'] ) ) ? htmlspecialchars ( $new_instance['code8'], ENT_QUOTES) : '';
+			$instance['code9'] = ( ! empty( $new_instance['code9'] ) ) ? htmlspecialchars ( $new_instance['code9'], ENT_QUOTES) : '';
+			$instance['code10'] = ( ! empty( $new_instance['code10'] ) ) ? htmlspecialchars ( $new_instance['code10'], ENT_QUOTES) : '';
 	
 			return $instance;
 		}
