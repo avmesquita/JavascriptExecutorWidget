@@ -200,7 +200,7 @@
 			</p>
 		</a>
 		<div style="padding:5px;" id="code6Collapse" class="collapse">
-			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code6' ); ?>"><?php _e( 'Code #6:' ); ?></label> 
+			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code6' ); ?>"><?php _e( 'Code:' ); ?></label> 
 			<textarea class="widefat code content" style="min-height:160px;font-family:Courier New, Courier, monospace;" placeholder="JavaScript code to deploy. Optional. Take care." id="<?php echo $this->get_field_id( 'code6' ); ?>" name="<?php echo $this->get_field_name( 'code6' ); ?>" value="<?php echo esc_attr( $code6 ); ?>"><?php echo esc_attr( $code6 ); ?></textarea>
 		</div>
 	</div>
@@ -213,7 +213,7 @@
 			</p>
 		</a>
 		<div style="padding:5px;" id="code7Collapse" class="collapse">
-			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code7' ); ?>"><?php _e( 'Code #7:' ); ?></label> 
+			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code7' ); ?>"><?php _e( 'Code:' ); ?></label> 
 			<textarea class="widefat code content" style="min-height:160px;font-family:Courier New, Courier, monospace;" placeholder="JavaScript code to deploy. Optional. Take care." id="<?php echo $this->get_field_id( 'code7' ); ?>" name="<?php echo $this->get_field_name( 'code7' ); ?>" value="<?php echo esc_attr( $code7 ); ?>"><?php echo esc_attr( $code7 ); ?></textarea>
 		</div>
 	</div>
@@ -226,7 +226,7 @@
 			</p>
 		</a>
 		<div style="padding:5px;" id="code8Collapse" class="collapse">
-			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code8' ); ?>"><?php _e( 'Code #8:' ); ?></label> 
+			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code8' ); ?>"><?php _e( 'Code:' ); ?></label> 
 			<textarea class="widefat code content" style="min-height:160px;font-family:Courier New, Courier, monospace;" placeholder="JavaScript code to deploy. Optional. Take care." id="<?php echo $this->get_field_id( 'code8' ); ?>" name="<?php echo $this->get_field_name( 'code8' ); ?>" value="<?php echo esc_attr( $code8 ); ?>"><?php echo esc_attr( $code8 ); ?></textarea>
 		</div>
 	</div>
@@ -239,7 +239,7 @@
 			</p>
 		</a>
 		<div style="padding:5px;" id="code9Collapse" class="collapse">
-			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code9' ); ?>"><?php _e( 'Code #9:' ); ?></label> 
+			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code9' ); ?>"><?php _e( 'Code:' ); ?></label> 
 			<textarea class="widefat code content" style="min-height:160px;font-family:Courier New, Courier, monospace;" placeholder="JavaScript code to deploy. Optional. Take care." id="<?php echo $this->get_field_id( 'code9' ); ?>" name="<?php echo $this->get_field_name( 'code9' ); ?>" value="<?php echo esc_attr( $code9 ); ?>"><?php echo esc_attr( $code9 ); ?></textarea>
 		</div>
 	</div>
@@ -252,7 +252,7 @@
 			</p>
 		</a>
 		<div style="padding:5px;" id="code10Collapse" class="collapse">
-			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code10' ); ?>"><?php _e( 'Code #10:' ); ?></label> 
+			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code10' ); ?>"><?php _e( 'Code:' ); ?></label> 
 			<textarea class="widefat code content" style="min-height:160px;font-family:Courier New, Courier, monospace;" placeholder="JavaScript code to deploy. Optional. Take care." id="<?php echo $this->get_field_id( 'code10' ); ?>" name="<?php echo $this->get_field_name( 'code10' ); ?>" value="<?php echo esc_attr( $code10 ); ?>"><?php echo esc_attr( $code10 ); ?></textarea>
 		</div>
 	</div>
