@@ -22,10 +22,10 @@ if(!defined('ABSPATH')){
 }
 
 // Load Class
-require_once(dirname(__FILE__).'\includesjavascript-executor-widget-class.php');
+require_once(dirname(__FILE__).'/includes/javascript-executor-widget-class.php');
 
 // Register Widget
-function wpb_wlfc_funil_widget() {
+function wpb_wlfc_jew_widget() {
     register_widget( 'wpb_jew_widget' );
 }
 // Hook in function

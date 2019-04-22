@@ -20,7 +20,7 @@
 		{				
 			$title = apply_filters( 'widget_title', $instance['title'] );
 	
-			$code6 = apply_filters( 'wp_jew_code6', $instance['code6'] ); 
+			$code6 = apply_filters( 'wp_jew_code1', $instance['code1'] ); 
 			$code2 = apply_filters( 'wp_jew_code2', $instance['code2'] ); 
 			$code3 = apply_filters( 'wp_jew_code3', $instance['code3'] ); 
 			$code4 = apply_filters( 'wp_jew_code4', $instance['code4'] ); 
@@ -98,7 +98,7 @@
 			if ( isset( $instance[ 'code7' ] ) ) { $code7 = $instance[ 'code7' ]; } else { $code7 = ""; }
 			if ( isset( $instance[ 'code8' ] ) ) { $code8 = $instance[ 'code8' ]; } else { $code8 = ""; }
 			if ( isset( $instance[ 'code9' ] ) ) { $code9 = $instance[ 'code9' ]; } else { $code9 = ""; }
-			if ( isset( $instance[ 'code60' ] ) ) { $code60 = $instance[ 'code60' ]; } else { $code60 = ""; }
+			if ( isset( $instance[ 'code10' ] ) ) { $code10 = $instance[ 'code10' ]; } else { $code10 = ""; }
 	
 	?>
 	<link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>../css/bootstrap.min.css">
@@ -235,7 +235,7 @@
 	<div style="outline: 1px solid lightgray;">
 		<a data-toggle="collapse" href="#code9Collapse" role="button" aria-expanded="true" aria-controls="#code9Collapse">
 			<p class="" style="padding-top:5px;padding-left:5px;" data-toggle="collapse">
-				<label style="font-weight:bold;color:gray;">Code #1</label><br>
+				<label style="font-weight:bold;color:gray;">Code #9</label><br>
 			</p>
 		</a>
 		<div style="padding:5px;" id="code9Collapse" class="collapse">
