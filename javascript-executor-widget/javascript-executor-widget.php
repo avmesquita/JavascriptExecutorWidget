@@ -6,7 +6,7 @@
  */
 /*
 Plugin Name: Javascript Executor Widget
-Plugin URI: https://www.andremesquita.com/
+Plugin URI: https://www.andremesquita.com/javascript-executor-widget-wordpress-plugin-opensource/
 Description: This is a plugin to execute random javascript code - Useful to display ads and marketing campaign.
 Version: 1.0.0
 Author: Andre Mesquita
