@@ -1,4 +1,4 @@
-# JavascriptExecutorWidget
+# Javascript Executor Widget (wordpress plugin)
 
 This is a wordpress plugin to execute random javascript code 
 
