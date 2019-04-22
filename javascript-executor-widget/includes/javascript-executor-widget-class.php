@@ -20,7 +20,8 @@
 		{				
 			$title = apply_filters( 'widget_title', $instance['title'] );
 	
-			$code6 = apply_filters( 'wp_jew_code1', $instance['code1'] ); 
+			$code0 = apply_filters( 'wp_jew_code0', $instance['code0'] ); 
+			$code1 = apply_filters( 'wp_jew_code1', $instance['code1'] ); 
 			$code2 = apply_filters( 'wp_jew_code2', $instance['code2'] ); 
 			$code3 = apply_filters( 'wp_jew_code3', $instance['code3'] ); 
 			$code4 = apply_filters( 'wp_jew_code4', $instance['code4'] ); 
@@ -78,7 +79,7 @@
 						$htmlOut = $code1;
 						break;
 				}
-				echo html_entity_decode($htmlOut);
+				echo html_entity_decode($code0 . $htmlOut);
 			 ?>
 		</div>
 		
@@ -89,6 +90,7 @@
 		// Widget Backend 
 		public function form( $instance ) {
 			if ( isset( $instance[ 'title' ] ) ) { $title = $instance[ 'title' ]; }	else { $title = __( 'New title', 'wpb_widget_impeto_funil_domain' ); }  
+			if ( isset( $instance[ 'code0' ] ) ) { $code0 = $instance[ 'code0' ]; } else { $code0 = ""; }
 			if ( isset( $instance[ 'code1' ] ) ) { $code1 = $instance[ 'code1' ]; } else { $code1 = ""; }
 			if ( isset( $instance[ 'code2' ] ) ) { $code2 = $instance[ 'code2' ]; } else { $code2 = ""; }
 			if ( isset( $instance[ 'code3' ] ) ) { $code3 = $instance[ 'code3' ]; } else { $code3 = ""; }
@@ -121,6 +123,23 @@
 				<?php _e('CODES'); ?>
 			</h6>		
 		</p>
+	</div>
+
+	<div>
+		<hr>
+	</div>
+
+    <!-- Fixed Code -->
+	<div style="outline: 1px solid lightgray;">
+		<a data-toggle="collapse" href="#code0Collapse" role="button" aria-expanded="true" aria-controls="#code0Collapse">
+			<p class="" style="padding-top:5px;padding-left:5px;" data-toggle="collapse">
+				<label style="font-weight:bold;color:gray;">Fixed Code</label><br>
+			</p>
+		</a>
+		<div style="padding:5px;" id="code0Collapse" class="collapse">
+			<label style="padding-top:5px;font-weight:bold;" for="<?php echo $this->get_field_id( 'code0' ); ?>"><?php _e( 'Code:' ); ?></label> 
+			<textarea class="widefat code content" style="min-height:160px;font-family:Courier New, Courier, monospace;" placeholder="JavaScript code to deploy. Optional. Take care." id="<?php echo $this->get_field_id( 'code0' ); ?>" name="<?php echo $this->get_field_name( 'code0' ); ?>" value="<?php echo esc_attr( $code0 ); ?>"><?php echo esc_attr( $code0 ); ?></textarea>
+		</div>
 	</div>
 
 	<div>
@@ -265,7 +284,8 @@
 			$instance = array();
 	
 			$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-	
+
+			$instance['code0'] = ( ! empty( $new_instance['code0'] ) ) ? htmlspecialchars ( $new_instance['code0'], ENT_QUOTES) : '';
 			$instance['code1'] = ( ! empty( $new_instance['code1'] ) ) ? htmlspecialchars ( $new_instance['code1'], ENT_QUOTES) : '';
 			$instance['code2'] = ( ! empty( $new_instance['code2'] ) ) ? htmlspecialchars ( $new_instance['code2'], ENT_QUOTES) : '';
 			$instance['code3'] = ( ! empty( $new_instance['code3'] ) ) ? htmlspecialchars ( $new_instance['code3'], ENT_QUOTES) : '';
