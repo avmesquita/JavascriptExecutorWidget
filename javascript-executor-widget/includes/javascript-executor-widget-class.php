@@ -79,7 +79,7 @@
 						$htmlOut = $code1;
 						break;
 				}
-				echo html_entity_decode($code0 . $htmlOut);
+				echo html_entity_decode($code0 . " ". $htmlOut);
 			 ?>
 		</div>
 		
@@ -89,7 +89,7 @@
 			
 		// Widget Backend 
 		public function form( $instance ) {
-			if ( isset( $instance[ 'title' ] ) ) { $title = $instance[ 'title' ]; }	else { $title = __( 'New title', 'wpb_widget_impeto_funil_domain' ); }  
+			if ( isset( $instance[ 'title' ] ) ) { $title = $instance[ 'title' ]; }	else { $title = ""; }  
 			if ( isset( $instance[ 'code0' ] ) ) { $code0 = $instance[ 'code0' ]; } else { $code0 = ""; }
 			if ( isset( $instance[ 'code1' ] ) ) { $code1 = $instance[ 'code1' ]; } else { $code1 = ""; }
 			if ( isset( $instance[ 'code2' ] ) ) { $code2 = $instance[ 'code2' ]; } else { $code2 = ""; }
@@ -311,7 +311,8 @@
             	return $this->data[ $name ];
 
         	return NULL;
-    	}
+		}
+
 	}
 
 
